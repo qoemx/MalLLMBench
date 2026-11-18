@@ -1,0 +1,10 @@
+source,pool_total_7000,cryptojacking_used_3000,ransomware_used_3000
+clang64,12,5,6
+conda,271,120,116
+cygwin,800,352,337
+dike,1113,458,509
+mozilla,142,62,59
+msys2,2521,1081,1078
+python,1014,416,436
+thcrull,903,404,374
+virtualbox,224,102,85

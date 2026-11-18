@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-"""Run TIF baseline (LightGBM 5-fold) on shipped string features.
-Usage: python run_tif.py --task cryptojacking|ransomware"""
+"""Run TIF baseline (LightGBM 5-fold) on shipped string features. v2 — fixed label join.
+Usage: python run_tif.py --task cryptojacking|ransomware
+
+Label join (fixed): features use sample_id == manifests filename (16-hex prefix);
+we build the label dict keyed by BOTH filename and hash prefix, then query by sample_id.
+"""
 import argparse, csv, os, sys
 import numpy as np
 
@@ -8,6 +12,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--task", choices=["cryptojacking", "ransomware"], required=True)
     ap.add_argument("--data", default="data/features")
+    ap.add_argument("--manifests", default="data/manifests")
     ap.add_argument("--out", default="results/conventional")
     a = ap.parse_args()
 
@@ -16,23 +21,43 @@ def main():
     except ImportError:
         sys.exit("lightgbm required: pip install lightgbm")
 
-    def load(split):
+    # ---- labels: key by filename AND hash prefix (16 chars), so sample_id always hits ----
+    def load_labels(split):
+        lab = {}
+        fn = f"{a.manifests}/{a.task}_{split}.csv"
+        for r in csv.DictReader(open(fn)):
+            y = int(r["label"])
+            if r.get("source") == "benign":
+                y = 0  # benign rows always 0 regardless of label column
+            for key in (r.get("filename", ""), r.get("hash", "")):
+                if key:
+                    lab[key] = y
+                    lab[key[:16]] = y   # 16-hex malware id form
+                    lab[key[:32]] = y   # 32-hex benign sha256-prefix form (ransom features)
+        return lab
+
+    lab = load_labels("lab")
+    lab_wild = load_labels("wild")
+
+    def load_features(split, labels):
         rows = list(csv.DictReader(open(f"{a.data}/{a.task}/{split}/string_features.csv")))
-        ids = [r["sample_id"] for r in rows]
-        X = np.array([[float(v) for k, v in r.items() if k != "sample_id"] for r in rows])
-        return ids, X
+        ids, X, ys, missing = [], [], [], 0
+        for r in rows:
+            sid = r["sample_id"]
+            if sid not in labels:
+                missing += 1
+                continue
+            ids.append(sid)
+            ys.append(labels[sid])
+            X.append([float(v) for k, v in r.items() if k != "sample_id"])
+        if missing:
+            print(f"  [{split}] {missing} feature rows without labels (skipped)")
+        return ids, np.array(X), np.array(ys)
 
-    lab_ids, XL = load("lab")
-    wild_ids, XW = load("wild")
-
-    # Labels come from manifests (label column; benign source rows are label 0)
-    lab = {}
-    for split in ("lab",):
-        fn = f"data/manifests/{a.task}_{split}.csv"
-        if os.path.exists(fn):
-            for r in csv.DictReader(open(fn)):
-                lab[r["filename"]] = int(r["label"])
-    yL = np.array([lab.get(i, 0) for i in lab_ids])
+    lab_ids, XL, yL = load_features("lab", lab)
+    wild_ids, XW, _ = load_features("wild", lab_wild)
+    print(f"lab: {len(yL)} samples, pos={int(yL.sum())}; wild: {len(wild_ids)}")
+    assert yL.sum() > 0, "ALL-ZERO TRAINING LABELS — join failed, aborting"
 
     from sklearn.model_selection import StratifiedKFold
     folds = list(StratifiedKFold(5, shuffle=True, random_state=42).split(XL, yL))
@@ -44,17 +69,20 @@ def main():
     for k, (tr, va) in enumerate(folds):
         m = lgb.LGBMClassifier(**params)
         m.fit(XL[tr], yL[tr])
+        from sklearn.metrics import f1_score
+        f1va = f1_score(yL[va], (m.predict_proba(XL[va])[:, 1] > 0.5).astype(int))
+        print(f"  fold{k+1} val F1={f1va:.4f}")
         probW += m.predict_proba(XW)[:, 1] / 5
-        print(f"fold{k+1} done")
+
     pred = (probW > 0.5).astype(int)
     os.makedirs(a.out, exist_ok=True)
-    out = f"{a.out}/{a.task[:6]}_tif_repro_confidence.csv"
+    out = f"{a.out}/{a.task}_tif_repro_confidence.csv"
     with open(out, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["filename", "label", "prob", "pred", "is_benign"])
         for i, p, pr in zip(wild_ids, probW, pred):
-            w.writerow([i, lab.get(i, ""), f"{p:.6f}", pr, "TODO_JOIN_MANIFEST"])
-    print("wrote", out, "(join labels/is_benign from manifests before use)")
+            w.writerow([i, lab_wild.get(i, ""), f"{p:.6f}", pr, False])
+    print("wrote", out)
 
 if __name__ == "__main__":
     main()

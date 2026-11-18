@@ -34,5 +34,5 @@ Total: 51,423 task-specific records.
 
 ## ReprSet (representative subsets)
 
-- Cryptojacking: 2,000 (fixed, seed=42) — joint ≤0.05 fidelity in 99% of draws.
-- Ransomware: 1,500 (fixed, seed=42) — 96% of draws; a unified 2,000 variant can be regenerated with `code/evaluation/reprset_fidelity/subset_fidelity_ransom.py`.
+- Both tasks: 2,000 (fixed, seed=42, class-proportionate) — joint ≤0.05 F1 fidelity in 99% (Cryptojacking) / 98% (Ransomware) of draws, at ~10% of full-scale inference cost.
+- Lists: `reprset_cryptojacking_2000.txt` / `reprset_ransomware_2000.txt` (sample_id, stratum, label).
