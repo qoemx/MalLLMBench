@@ -6,7 +6,7 @@ import json, re, pickle
 import numpy as np
 from collections import Counter, defaultdict
 
-B = "/home/aapt/disk1.7T/aapt-u1_data/work/pe2prompt"
+B = "./workspace"
 
 traces = [json.loads(l) for l in open(f"{B}/m3_av_full_traces.jsonl")]
 ok = [t for t in traces if t.get("status") == "success"]
@@ -14,8 +14,8 @@ print(f"轨迹: {len(ok)}/120")
 
 # TIF独立证据(两任务)
 tifs = {}
-for task, tr in [("cryptojacking", "/home/aapt/disk1.7T/aapt-u1_data/work/tif_miner_v2"),
-                 ("ransomware", "/home/aapt/disk1.7T/aapt-u1_data/work/tif_ransom_v2")]:
+for task, tr in [("cryptojacking", "./workspace/features/cryptojacking"),
+                 ("ransomware", "./workspace/features/ransomware")]:
     keys = pickle.load(open(f"{tr}/models/keys.pkl", "rb"))
     XW = pickle.load(open(f"{tr}/fe_v2_wild.pkl", "rb"))
     wid = pickle.load(open(f"{tr}/fe_v2_wild_ids.pkl", "rb"))

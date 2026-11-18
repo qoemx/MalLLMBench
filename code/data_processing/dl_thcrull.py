@@ -3,7 +3,7 @@
 import os, io, re, time, zipfile, urllib.request, urllib.parse
 import concurrent.futures as cf
 
-BENIGN = "/data/shared-nvme/benign_pe"
+BENIGN = "./benign_workspace"
 OUT = os.path.join(BENIGN, "raw_thcrull")
 os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) research-downloader"}

@@ -4,8 +4,8 @@
 import os
 import pandas as pd
 
-BENIGN = "/data/shared-nvme/benign_pe"
-ROOT = "/data/shared-nvme"
+BENIGN = "./benign_workspace"
+ROOT = "./benign_workspace"
 OUT = os.path.join(ROOT, "dataset_v2")
 os.makedirs(OUT, exist_ok=True)
 SEED = 42

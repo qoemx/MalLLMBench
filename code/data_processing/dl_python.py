@@ -3,7 +3,7 @@
 import os, time, re, urllib.request
 import concurrent.futures as cf
 
-OUT = "/data/shared-nvme/benign_pe/raw_python"
+OUT = "./benign_workspace/raw_python"
 os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) research-downloader"}
 

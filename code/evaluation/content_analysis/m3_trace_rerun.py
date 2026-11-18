@@ -4,9 +4,9 @@ import json, os, time, threading, re, pickle
 import numpy as np
 from openai import OpenAI
 
-B = "/home/aapt/disk1.7T/aapt-u1_data/work/pe2prompt"
-TR_M = "/home/aapt/disk1.7T/aapt-u1_data/work/tif_miner_v2"
-TR_R = "/home/aapt/disk1.7T/aapt-u1_data/work/tif_ransom_v2"
+B = "./workspace"
+TR_M = "./workspace/features/cryptojacking"
+TR_R = "./workspace/features/ransomware"
 MODEL = "qwen38-27b"
 PORTS = [8001, 8002]
 

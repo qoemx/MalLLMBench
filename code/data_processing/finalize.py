@@ -2,7 +2,7 @@
 """全局规范化: 7个源统一 MZ+PE 双校验 -> sha256 命名 -> 去重 -> 按上游软件族统计 -> 最终manifest"""
 import os, re, hashlib, csv, json
 
-BENIGN = "/data/shared-nvme/benign_pe"
+BENIGN = "./benign_workspace"
 FINAL = os.path.join(BENIGN, "final")
 os.makedirs(FINAL, exist_ok=True)
 

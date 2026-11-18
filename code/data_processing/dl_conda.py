@@ -4,7 +4,7 @@ repodata 选包 -> curl 下载 .conda/.tar.bz2 -> 解包提取 Library/bin 的 P
 import os, re, json, time, hashlib, subprocess, urllib.parse
 import concurrent.futures as cf
 
-BENIGN = "/data/shared-nvme/benign_pe"
+BENIGN = "./benign_workspace"
 PKGDIR = os.path.join(BENIGN, "conda_pkgs")
 OUT = os.path.join(BENIGN, "raw_conda")
 for d in (PKGDIR, OUT):

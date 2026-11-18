@@ -7,7 +7,7 @@ PE2勒索=已有三温度(repeat_r链)"""
 import json, csv, os, random
 import numpy as np
 
-B = "/home/aapt/disk1.7T/aapt-u1_data/work/pe2prompt"
+B = "./workspace"
 
 # ============ Part 1: AV-Agent最终结果 MC区间(T=0, 300样本三次) ============
 OUT1 = f"{B}/av_r_mc_analysis"
@@ -82,7 +82,7 @@ print(f"CSV → {OUT1}/ 3文件\n")
 # ============ Part 2: 勒索代表性子集(双方法) ============
 v2 = {}
 v2cat = {}
-for row in csv.DictReader(open("/home/aapt-u1/v2data/labels/ransomware_wild_v2.csv")):
+for row in csv.DictReader(open("./data/manifests/ransomware_wild_v2.csv")):
     h = row["hash"].removesuffix(".exe")[:16]
     if row.get("source") == "benign":
         v2[h] = 0; v2cat[h] = "benign"

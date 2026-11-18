@@ -3,7 +3,7 @@
 import os, re, json, time, hashlib, tarfile, subprocess, urllib.request, urllib.parse
 import concurrent.futures as cf
 
-BENIGN = "/data/shared-nvme/benign_pe"
+BENIGN = "./benign_workspace"
 IDX = os.path.join(BENIGN, "msys2_idx")
 PKGDIR = os.path.join(BENIGN, "msys2_pkgs")
 OUT = os.path.join(BENIGN, "raw_msys2")

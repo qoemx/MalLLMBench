@@ -3,7 +3,7 @@
 import os, time, re, urllib.request, urllib.parse
 import concurrent.futures as cf
 
-OUT = "/data/shared-nvme/benign_pe/raw_mozilla"
+OUT = "./benign_workspace/raw_mozilla"
 os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) research-downloader"}
 LANGS = ["en-US", "en-GB", "de", "fr", "es-ES", "ja", "zh-CN", "zh-TW", "ru", "pt-BR", "it", "ko"]

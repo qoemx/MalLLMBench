@@ -3,7 +3,7 @@
 import os, time, sys
 import urllib.request
 
-OUT = "/data/shared-nvme/benign_pe/pkgs"
+OUT = "./benign_workspace/pkgs"
 os.makedirs(OUT, exist_ok=True)
 BASE = "https://hf-mirror.com/datasets/AquaCoder0010/XION-Malware-Benign-dataset/resolve/main"
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) research-downloader"}

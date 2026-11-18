@@ -7,7 +7,7 @@ import json, csv, os
 import numpy as np
 from collections import defaultdict
 
-B = "/home/aapt/disk1.7T/aapt-u1_data/work/pe2prompt"
+B = "./workspace"
 OUT = f"{B}/av_mc_analysis"
 os.makedirs(OUT, exist_ok=True)
 SEED = 42

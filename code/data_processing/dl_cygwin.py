@@ -2,7 +2,7 @@
 """Cygwin 良性 PE 采集器 (清华镜像): setup.xz 索引 -> 筛包 -> curl下载(限频) -> 提取exe"""
 import os, re, time, json, hashlib, subprocess, urllib.parse, tarfile
 
-BENIGN = "/data/shared-nvme/benign_pe"
+BENIGN = "./benign_workspace"
 PKGDIR = os.path.join(BENIGN, "cygwin_pkgs")
 OUT = os.path.join(BENIGN, "raw_cygwin")
 for d in (PKGDIR, OUT):

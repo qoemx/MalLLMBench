@@ -5,7 +5,7 @@ import json, csv, os
 import numpy as np
 from collections import Counter
 
-B = "/home/aapt/disk1.7T/aapt-u1_data/work/pe2prompt"
+B = "./workspace"
 OUT = f"{B}/av_r_temp_analysis"
 os.makedirs(OUT, exist_ok=True)
 SEED = 42

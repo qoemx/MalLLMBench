@@ -2,7 +2,7 @@
 """规范化已下载的良性 PE: 校验MZ头 -> 按MD5统一命名 -> 生成清单CSV"""
 import os, hashlib, csv
 
-BENIGN = "/data/shared-nvme/benign_pe"
+BENIGN = "./benign_workspace"
 OUT = os.path.join(BENIGN, "normalized")
 os.makedirs(OUT, exist_ok=True)
 

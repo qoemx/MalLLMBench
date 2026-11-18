@@ -8,14 +8,14 @@
 import json, csv, random
 import numpy as np
 
-B = "/home/aapt/disk1.7T/aapt-u1_data/work/pe2prompt"
+B = "./workspace"
 
 wild_lab = {}
 wild_cat = {}
-for row in csv.DictReader(open("/home/aapt-u1/v2data/labels/wild_label.csv")):
+for row in csv.DictReader(open("./data/manifests/wild_label.csv")):
     wild_lab[row["hash"][:16]] = int(row["label"])
     wild_cat[row["hash"][:16]] = "cryptojacking" if int(row["label"]) == 1 else "other_malware"
-for row in csv.DictReader(open("/home/aapt-u1/v2data/labels/cryptojacking_wild_v2.csv")):
+for row in csv.DictReader(open("./data/manifests/cryptojacking_wild_v2.csv")):
     if row.get("source") == "benign":
         wild_lab[row["hash"].removesuffix(".exe")[:16]] = 0
         wild_cat[row["hash"].removesuffix(".exe")[:16]] = "benign"

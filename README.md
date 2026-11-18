@@ -1,6 +1,8 @@
-# MalLLMBench
+# MalLLMBench — Anonymous Artifact (double-blind review)
 
 **A benchmark for evaluating LLM-assisted malware analysis on Cryptojacking and Ransomware detection, with benign-population controls, stability/fidelity/content-audit protocols.**
+
+> This repository is an anonymized artifact submission. Author information is withheld for double-blind review.
 
 MalLLMBench measures not only *classification accuracy* but three additional dimensions that conventional benchmarks miss:
 
@@ -32,7 +34,7 @@ Full Wild detection performance (F1) of evaluated methods:
 |---|---|---|
 | PE2Prompt (LLM, qwen38-27b) | 0.5268 | 0.4062 (voting variant; single-word variant degenerates to 0.0) |
 | AV-Agent (two-phase pipeline, qwen38-27b) | 0.8475 | 0.5359 |
-| + 7 conventional baselines (EHm, EHc, PF, RB/MalConv, OP-BiLSTM, CFG-GIN, TIF) | see `results/` | see `results/` |
+| + 7 conventional baselines (EHm, EHc, PF, RB/MalConv, OP-BiLSTM, CFG-GIN, TIF) | see `results/tables/detection_wild.csv` | see `results/tables/detection_wild.csv` |
 
 ## Data sources & construction
 
@@ -46,7 +48,7 @@ Full Wild detection performance (F1) of evaluated methods:
 data/manifests/     sample hashes, labels, splits, ReprSet IDs, benign source counts
 data/features/      static string-indicator features (TIF) for all 4 task×split cells
 code/data_processing/       benign collection scripts + v2 dataset assembly
-code/conventional_baselines/ (entry points; see docs for the 7 baselines' configs)
+code/conventional_baselines/ TIF baseline entry point (configs for all 7 in configs/conventional/)
 code/evaluation/    M1 stability / M2 subset fidelity / M3 evidence audit
 results/predictions/        final per-method summaries (PE2, AV-Agent)
 results/conventional/       per-sample confidence CSVs for the 7 baselines
@@ -58,10 +60,10 @@ reproduction/       environment + run instructions
 
 ## LLM methods
 
-The two evaluated LLM methods are **not** redistributed here; use the original artifacts:
+The two evaluated LLM methods are **not** redistributed here; use the original artifacts (cited in the paper as [PE2Prompt] and [AV-Agent]):
 
-- **PE2Prompt** — cite the original paper and use the authors' official prompt-formation scripts. Our runs used their 0.7p template verbatim (task vocabulary swapped only).
-- **AV-Agent** — cite the original paper (two-phase agent review). We provide the exact *inputs* we fed it (three-lane confidence values and feature digests are reconstructible from `data/` + `results/conventional/`) and our evaluation code, but the agent prompts/runner belong to the original authors.
+- **PE2Prompt** — we used the authors' official 0.7p prompt-formation scripts verbatim (task vocabulary swapped only).
+- **AV-Agent** — two-phase agent review; we provide the exact *inputs* we fed it (three-lane confidence values and feature digests, reconstructible from `data/` + `results/conventional/`) and our evaluation code.
 
 Model used in all reported LLM runs: **qwen38-27b** (local vLLM, temperature 0 unless stated, thinking mode disabled).
 
@@ -71,7 +73,7 @@ See `docs/evaluation_protocol.md` for the full spec. Summary:
 
 1. **Classification**: full-Wild ACC/PRE/REC/F1 + benign-only FPR (denominator = benign subset only).
 2. **M1 Stability**: 300-sample stratified set (100 target / 100 other-malware / 100 benign, seed=42), 3 real runs per temperature {0, 0.3, 0.7}; per-sample disagreement rate; Monte-Carlo (10,000 draws, seed=42) F1 prediction intervals — *prediction intervals, not validated confidence intervals*.
-3. **M2 ReprSet fidelity**: 100 independent class-proportionate draws per size {500..3,000}; |F1_sub − F1_full| per method; joint success = both ≤ 0.05.
+3. **M2 ReprSet fidelity**: 100 independent class-proportionate draws per size {500..3,000}; |F1_sub − F1_full| per method; joint success = both ≤ 0.05. Token costs measured per-sample from run usage records.
 4. **M3 Evidence audit**: 120 samples (2 tasks × 20/20/20, seed=42); claims extracted from AV-Agent internal analysis traces; verdicts **Supported / Contradicted / Unverifiable** against independently extracted static features. PE2 natively emits no rationale → Availability 0%, other metrics N/A. Traces are *internal execution artifacts*, not user-facing explanations; behavioral assertions are never counted as errors when static evidence cannot confirm them.
 
 ## Reproduction
@@ -79,8 +81,8 @@ See `docs/evaluation_protocol.md` for the full spec. Summary:
 ```bash
 cd reproduction
 pip install -r requirements.txt
-bash run_baselines.sh   # trains/evaluates conventional baselines from data/features/
-bash run_evaluation.sh  # recomputes all tables in results/tables/
+bash run_evaluation.sh   # recomputes all tables in results/tables/ from shipped records (no LLM calls)
+bash run_baselines.sh    # retrains the TIF baseline from shipped features
 ```
 
 LLM-side reproduction requires obtaining the original method code (see above) plus a qwen38-27b endpoint; our per-sample inputs and outputs are shipped so metrics can be recomputed without re-inference.
@@ -94,14 +96,7 @@ LLM-side reproduction requires obtaining the original method code (see above) pl
 
 ## Citation
 
-```bibtex
-@dataset{malllmbench2026,
-  title  = {MalLLMBench: A Benchmark for LLM-assisted Malware Analysis},
-  author = {TODO},
-  year   = {2026},
-  note   = {Under review}
-}
-```
+Anonymous artifact for double-blind review. A citable entry with author information will be provided upon acceptance.
 
 ## License
 
