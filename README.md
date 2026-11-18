@@ -28,6 +28,8 @@ Both tasks use the same v2 benign population: 3,000 curated benign PEs per task 
 | Ransomware Lab | 2,000 | 4,000 | 1,000 | 7,000 |
 | Ransomware Wild | 5,141 | 10,282 | 2,000 | 17,423 |
 
+Total: 51,423 task-specific records. Two VirusShare hashes (`373c443e…` in Cryptojacking Lab, `f913a9a1…` in Ransomware Wild) appear on two rows each due to source-side duplication; their authoritative label (verified against the original label sources) is malware-positive=1, both rows are retained so counts match the paper and historical training, and all released prediction/label files use label=1 for them.
+
 Full Wild detection performance (F1):
 
 | Method | Cryptojacking Wild | Ransomware Wild |

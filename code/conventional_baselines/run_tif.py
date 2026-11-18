@@ -38,6 +38,11 @@ def main():
 
     lab = load_labels("lab")
     lab_wild = load_labels("wild")
+    benign_wild = set()
+    for r in csv.DictReader(open(f"{a.manifests}/{a.task}_wild.csv")):
+        if r.get("source") == "benign":
+            benign_wild.add((r.get("hash") or r["filename"])[:32])
+            benign_wild.add((r.get("hash") or r["filename"])[:16])
 
     def load_features(split, labels):
         rows = list(csv.DictReader(open(f"{a.data}/{a.task}/{split}/string_features.csv")))
@@ -81,7 +86,7 @@ def main():
         w = csv.writer(f)
         w.writerow(["filename", "label", "prob", "pred", "is_benign"])
         for i, p, pr in zip(wild_ids, probW, pred):
-            w.writerow([i, lab_wild.get(i, ""), f"{p:.6f}", pr, False])
+            w.writerow([i, lab_wild.get(i, ""), f"{p:.6f}", pr, i[:32] in benign_wild or i[:16] in benign_wild])
     print("wrote", out)
 
 if __name__ == "__main__":

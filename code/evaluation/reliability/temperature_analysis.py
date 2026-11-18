@@ -20,12 +20,14 @@ def files_for(group, T, r):
         return os.path.join(BASE, group, f"avagent_p2_repeat300_run{r}.jsonl")
     return os.path.join(BASE, group, pat.format(T=T, r=r))
 
-def load(group, T, r):
+def load(group, T, r, allowed=None):
     fn = files_for(group, T, r)
     conv = GROUPS[group][2]
     out = {}
     for l in open(fn):
         d = json.loads(l)
+        if allowed is not None and d["sample_id"] not in allowed:
+            continue
         if group.startswith("pe2"):
             p = d.get("prediction")
             v = 1 if p == "cryptominer" or p == "ransomware" or p == 1 else (0 if p in ("non_miner", "non_ransomware", 0) else None)
@@ -38,16 +40,27 @@ def load(group, T, r):
 rows_out = [["method_task", "temperature", "f1_run1", "f1_run2", "f1_run3", "f1_mean", "f1_std", "disagreement_rate", "n_common"]]
 for group in GROUPS:
     for T in (0.0, 0.3, 0.7):
+        sel = json.load(open(os.path.join(BASE, group, "selected_300_ids.json")))
+        labels = {s: m["label"] for s, m in sel.items()} if isinstance(next(iter(sel.values())), dict) else {}
+        allowed = set(sel)
         try:
-            runs = [load(group, T, r) for r in (1, 2, 3)]
+            runs = [load(group, T, r, allowed) for r in (1, 2, 3)]
         except FileNotFoundError as e:
             print(f"skip {group} T={T}: {e.filename}")
             continue
-        common = sorted(set.intersection(*[set(x) for x in runs]))
+        # paper caliber: one COMMON SET per group = samples validly parsed in ALL runs
+        # across ALL temperatures (so every temperature is computed on identical samples)
+        try:
+            all_runs_all_T = []
+            for T2 in (0.0, 0.3, 0.7):
+                for r2 in (1, 2, 3):
+                    all_runs_all_T.append(set(load(group, T2, r2, allowed)))
+            group_common = set.intersection(*all_runs_all_T) & allowed
+        except FileNotFoundError:
+            group_common = set.intersection(*[set(x) for x in runs]) & allowed
+        common = sorted(group_common)
         if not common:
             continue
-        sel = json.load(open(os.path.join(BASE, group, "selected_300_ids.json")))
-        labels = {s: m["label"] for s, m in sel.items()} if isinstance(next(iter(sel.values())), dict) else {}
         f1s = []
         for run in runs:
             tp = sum(1 for s in common if run[s] == 1 and labels.get(s, 0) == 1)

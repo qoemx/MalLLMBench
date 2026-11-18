@@ -14,8 +14,14 @@
 ### {task}_wild_malware_labels.csv
 Malware-only ground truth (no benign rows), full MD5.
 
-### benign_source_counts.csv / final_manifest.csv
-Full 7,000 benign pool: sha256, source channel, family, filename, size.
+### benign_source_counts.csv
+Per-channel counts for the 7,000-file benign pool vs. the 3,000 used per task.
+### benign_{task}_v2.csv
+The 3,000 benign samples adopted by each task: sha256, source, family, size.
+### benign_v2_hashes.txt
+All 6,000 adopted benign sha256 hashes (both tasks, disjoint).
+### benign_id_map_ransomware.csv
+32-hex feature-file id ↔ full 64-hex sha256 (benign rows in ransomware manifests/features).
 
 ### reprset_*.txt
 Fixed ReprSet sample lists: `sample_id, stratum, label`.
