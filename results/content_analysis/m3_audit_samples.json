@@ -1,0 +1,606 @@
+{
+ "cryptojacking": [
+  {
+   "sample_id": "80844b2680db59cb",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "80f48570b652c880",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "182052ec48e72ed7",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "ffa13704a66750bc",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "28611e8d7ac5693b",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "98c027c20c8c0a11",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "be6fa72faeddafb4",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "8a3b02355129d7b7",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "e6a81a8e7ddaeaf2",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "d6051f7433fea7b0",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "30ce8c6252a14459",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "2c6b98d54fb1e45b",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "6cb69c4399835c8b",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "b5e6cc323a25bb1a",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "e496da2cd7fb17d8",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "4e0af8ca656a0eb7",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "fd08eeb866e164b2",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "a404436dcaa82728",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "3a295a3f13064b7f",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "9f8d33e31ba4fd77",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "c20d44a609fe287a",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "0327f98b7e3eedc3",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "70aa82955651b607",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "90db35dd55d2bd03",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "852ae5c187ee70f3",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "fa8120f680c5337e",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "616b975815ad492b",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "f0a8af0438731b23",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "e66538925c5f1fdf",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "2bd7252e15e4dbf2",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "93a2b5f573175822",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "4a0bdb1a959cae99",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "f4a71c9d1474ef9d",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "18cda1978de28466",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "e3579b9b1dd8e6e8",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "7078d048869d7d3d",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "e0b917bda1839047",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "bc292fa751ce115e",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "c86b733d08ec6c7d",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "a790758f701b095f",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "27e84a9d283996fc",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "041812cd8cba0cb6",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "a7874425066b8e21",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "c9ea2ab2a9b4d92d",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "609c10d2f9800482",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "3df47f4ebe158f43",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "4c28e0bb2317d7bb",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "7c0f2958b153708f",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "fda534b794ae2ab1",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "31dd6aa6621e8b58",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "7a3f13a35bcdccb6",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "3bfd34407f0ff18b",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "2757280763cd6d71",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "f1915d3bdb681bb1",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "24193daf52407a53",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "c6a852be454b2f76",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "75ce15b38c1b7cc2",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "1a04b09cdd19ce85",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "0a4512c28a1f3b58",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "4636cba0a57c87f9",
+   "group": "benign",
+   "label": 0
+  }
+ ],
+ "ransomware": [
+  {
+   "sample_id": "196e4b42aea6b5bb",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "a4a014a8752d8349",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "09fabcec7a5aea06",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "7b8e660039a6c90c",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "0913b4c45a60e26e",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "29e896e1ddee5384",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "e05acea94e72eacc",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "6413f38084ab5940",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "78a60903cba31c78",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "21e52d7fccd2cf68",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "38641ccbd434abbc",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "d75a830983b79285",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "5fa0867be2b90425",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "33d1b5828d209f95",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "d90f6e2a21a073ac",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "0dcc72d3d752c114",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "821d4e6ad92a0fbe",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "b114c19123e99f41",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "16bc11ec0c6ec64c",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "50f8df039f92d774",
+   "group": "target",
+   "label": 1
+  },
+  {
+   "sample_id": "38622012ecfe4850",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "b2cbf9c9d97514fc",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "580085c379e2a031",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "f6ad713e7b206b76",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "d13a5a68e22fb6cb",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "b7cbc0201abceef3",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "21236a736541b3bf",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "ee1e43bb82c1c103",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "a3b54f8186c9eba4",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "76626bbd14dcf361",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "75b912d8650defda",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "bf9460c36f7ffc7e",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "22ae907bc1bf92a3",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "7a1fa171fb082d79",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "860b493bc225882b",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "94406d4bd29ddc51",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "4569023516267e8c",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "8d9aac02c370f275",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "7efff0e78d221cea",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "44f225e7f3149f47",
+   "group": "other",
+   "label": 0
+  },
+  {
+   "sample_id": "fa368c57d02b9eb3",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "ff9ef3f71807789a",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "6706484d73132e8f",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "848fcb7183842710",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "30c8ff8a64778399",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "17e88c51e6086df7",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "fd6b24e1658e3a9f",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "576956efc791c8ab",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "0e2a119e22947638",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "b0506ade6699089a",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "c43eefb9308e7a70",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "7375b09e59fb4adf",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "28a294fb99b781b0",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "10e2e32cd3443749",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "87da8b45e2fecadd",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "2ac0d47bf02a5daa",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "5fb6b33d268850cf",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "cfff953ada18b9c4",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "deeadbc6aade5e5e",
+   "group": "benign",
+   "label": 0
+  },
+  {
+   "sample_id": "bf0e870e0b9de578",
+   "group": "benign",
+   "label": 0
+  }
+ ]
+}

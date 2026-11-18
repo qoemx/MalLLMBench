@@ -1,0 +1,25 @@
+{
+  "caliber": "v2-Wild ransom (17,403/17,422; 19 other_malware no-pred excluded)",
+  "word_0_7p": {
+    "ACC": 0.7046,
+    "PRE": 0.0,
+    "REC": 0.0,
+    "F1": 0.0,
+    "TP": 0,
+    "FP": 0,
+    "FN": 5140,
+    "TN": 12263,
+    "benign_FPR": 0.0
+  },
+  "ultimate_voting": {
+    "ACC": 0.6729,
+    "PRE": 0.4379,
+    "REC": 0.3788,
+    "F1": 0.4062,
+    "TP": 1947,
+    "FP": 2499,
+    "FN": 3193,
+    "TN": 9764,
+    "benign_FPR": 0.0215
+  }
+}

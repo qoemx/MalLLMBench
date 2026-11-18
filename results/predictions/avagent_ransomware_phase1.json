@@ -1,0 +1,15 @@
+{
+  "model": "qwen38-27b",
+  "method": "AV-Agent Phase1 ransom (3-way: ransom_GI+RB+TIF, v2-wild)",
+  "n_total": 17422,
+  "n_parsed": 17422,
+  "ACC": 0.8127,
+  "PRE": 0.8948,
+  "REC": 0.4136,
+  "F1": 0.5657,
+  "TP": 2126,
+  "FP": 250,
+  "FN": 3014,
+  "TN": 12032,
+  "benign_FPR": 0.0025
+}

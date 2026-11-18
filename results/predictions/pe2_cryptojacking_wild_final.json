@@ -1,0 +1,31 @@
+{
+  "name": "PE2_qwen38_miner_v2wild",
+  "caliber": "v2-Wild (19,939/20,000; 61 excluded: ember extract failed, 3 oversized)",
+  "n": 19940,
+  "ACC": 0.7596,
+  "PRE": 0.6459,
+  "REC": 0.4448,
+  "F1": 0.5268,
+  "TP": 2669,
+  "FP": 1463,
+  "FN": 3331,
+  "TN": 12477,
+  "benign_FPR": 0.0045,
+  "by_category": {
+    "cryptojacking": {
+      "n": 6000,
+      "pred_pos": 2669,
+      "pos_rate": 0.4448
+    },
+    "other_malware": {
+      "n": 11940,
+      "pred_pos": 1454,
+      "pos_rate": 0.1218
+    },
+    "benign": {
+      "n": 2000,
+      "pred_pos": 9,
+      "pos_rate": 0.0045
+    }
+  }
+}

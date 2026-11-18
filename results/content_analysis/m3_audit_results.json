@@ -1,0 +1,2800 @@
+{
+ "table": {
+  "cryptojacking": {
+   "n": 60,
+   "availability": 0.4167,
+   "grounding": 1.0,
+   "n_sup": 45,
+   "n_con": 0,
+   "n_unv": 14,
+   "contradicted_rate": 0.0,
+   "correct_but_ungrounded": 0
+  },
+  "ransomware": {
+   "n": 60,
+   "availability": 0.5333,
+   "grounding": 1.0,
+   "n_sup": 61,
+   "n_con": 0,
+   "n_unv": 30,
+   "contradicted_rate": 0.0,
+   "correct_but_ungrounded": 0
+  }
+ },
+ "results": [
+  {
+   "sample_id": "28611e8d7ac5693b",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=8",
+     "verdict": "Supported",
+     "true_val": 8.0
+    }
+   ]
+  },
+  {
+   "sample_id": "30ce8c6252a14459",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    }
+   ]
+  },
+  {
+   "sample_id": "80f48570b652c880",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "98c027c20c8c0a11",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    }
+   ]
+  },
+  {
+   "sample_id": "d6051f7433fea7b0",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "e6a81a8e7ddaeaf2",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    }
+   ]
+  },
+  {
+   "sample_id": "182052ec48e72ed7",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "2c6b98d54fb1e45b",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "80844b2680db59cb",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "8a3b02355129d7b7",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "be6fa72faeddafb4",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "ffa13704a66750bc",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 2,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "mines?\\s+(?:cryptocurrency|coins?)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "b5e6cc323a25bb1a",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    }
+   ]
+  },
+  {
+   "sample_id": "e496da2cd7fb17d8",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=8",
+     "verdict": "Supported",
+     "true_val": 8.0
+    }
+   ]
+  },
+  {
+   "sample_id": "c20d44a609fe287a",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "9f8d33e31ba4fd77",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "3a295a3f13064b7f",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    }
+   ]
+  },
+  {
+   "sample_id": "0327f98b7e3eedc3",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    }
+   ]
+  },
+  {
+   "sample_id": "fd08eeb866e164b2",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=5",
+     "verdict": "Supported",
+     "true_val": 5.0
+    }
+   ]
+  },
+  {
+   "sample_id": "6cb69c4399835c8b",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "90db35dd55d2bd03",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "70aa82955651b607",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=15",
+     "verdict": "Supported",
+     "true_val": 15.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=103",
+     "verdict": "Supported",
+     "true_val": 103.0
+    }
+   ]
+  },
+  {
+   "sample_id": "a404436dcaa82728",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    }
+   ]
+  },
+  {
+   "sample_id": "4e0af8ca656a0eb7",
+   "task": "cryptojacking",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "e66538925c5f1fdf",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "fa8120f680c5337e",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "4a0bdb1a959cae99",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "7078d048869d7d3d",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "2bd7252e15e4dbf2",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "852ae5c187ee70f3",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "f4a71c9d1474ef9d",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "e3579b9b1dd8e6e8",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    }
+   ]
+  },
+  {
+   "sample_id": "616b975815ad492b",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=19",
+     "verdict": "Supported",
+     "true_val": 19.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=19",
+     "verdict": "Supported",
+     "true_val": 19.0
+    }
+   ]
+  },
+  {
+   "sample_id": "f0a8af0438731b23",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "extortion_count=18",
+     "verdict": "Supported",
+     "true_val": 18.0
+    }
+   ]
+  },
+  {
+   "sample_id": "93a2b5f573175822",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 1,
+   "correct": false,
+   "n_claims": 3,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=536",
+     "verdict": "Supported",
+     "true_val": 536.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=536",
+     "verdict": "Supported",
+     "true_val": 536.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=536",
+     "verdict": "Supported",
+     "true_val": 536.0
+    }
+   ]
+  },
+  {
+   "sample_id": "18cda1978de28466",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    }
+   ]
+  },
+  {
+   "sample_id": "c9ea2ab2a9b4d92d",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "7c0f2958b153708f",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "extortion_count=664",
+     "verdict": "Supported",
+     "true_val": 664.0
+    }
+   ]
+  },
+  {
+   "sample_id": "bc292fa751ce115e",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "a790758f701b095f",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "a7874425066b8e21",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "27e84a9d283996fc",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "4c28e0bb2317d7bb",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=187",
+     "verdict": "Supported",
+     "true_val": 187.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=24",
+     "verdict": "Supported",
+     "true_val": 24.0
+    }
+   ]
+  },
+  {
+   "sample_id": "c86b733d08ec6c7d",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    }
+   ]
+  },
+  {
+   "sample_id": "041812cd8cba0cb6",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "e0b917bda1839047",
+   "task": "cryptojacking",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "3df47f4ebe158f43",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 5,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=44",
+     "verdict": "Supported",
+     "true_val": 44.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=171",
+     "verdict": "Supported",
+     "true_val": 171.0
+    },
+    {
+     "type": "behavior",
+     "claim": "mines?\\s+(?:cryptocurrency|coins?)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "609c10d2f9800482",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 1,
+   "correct": false,
+   "n_claims": 4,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=323",
+     "verdict": "Supported",
+     "true_val": 323.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=49",
+     "verdict": "Supported",
+     "true_val": 49.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=398",
+     "verdict": "Supported",
+     "true_val": 398.0
+    },
+    {
+     "type": "behavior",
+     "claim": "mines?\\s+(?:cryptocurrency|coins?)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "2757280763cd6d71",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "75ce15b38c1b7cc2",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "31dd6aa6621e8b58",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=5",
+     "verdict": "Supported",
+     "true_val": 5.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    }
+   ]
+  },
+  {
+   "sample_id": "24193daf52407a53",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "4636cba0a57c87f9",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "7a3f13a35bcdccb6",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "f1915d3bdb681bb1",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 4,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=8",
+     "verdict": "Supported",
+     "true_val": 8.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=567",
+     "verdict": "Supported",
+     "true_val": 567.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=97",
+     "verdict": "Supported",
+     "true_val": 97.0
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "c6a852be454b2f76",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "0a4512c28a1f3b58",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "1a04b09cdd19ce85",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 4,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=6",
+     "verdict": "Supported",
+     "true_val": 6.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=6",
+     "verdict": "Supported",
+     "true_val": 6.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "fda534b794ae2ab1",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "3bfd34407f0ff18b",
+   "task": "cryptojacking",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 5,
+   "n_supported": 4,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=7",
+     "verdict": "Supported",
+     "true_val": 7.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=7",
+     "verdict": "Supported",
+     "true_val": 7.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "38641ccbd434abbc",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=32",
+     "verdict": "Supported",
+     "true_val": 32.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "a4a014a8752d8349",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "196e4b42aea6b5bb",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "d75a830983b79285",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    }
+   ]
+  },
+  {
+   "sample_id": "e05acea94e72eacc",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "6413f38084ab5940",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "09fabcec7a5aea06",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 4,
+   "n_supported": 4,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=12",
+     "verdict": "Supported",
+     "true_val": 12.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=116",
+     "verdict": "Supported",
+     "true_val": 116.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=20",
+     "verdict": "Supported",
+     "true_val": 20.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=20",
+     "verdict": "Supported",
+     "true_val": 20.0
+    }
+   ]
+  },
+  {
+   "sample_id": "7b8e660039a6c90c",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 4,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=24",
+     "verdict": "Supported",
+     "true_val": 24.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=232",
+     "verdict": "Supported",
+     "true_val": 232.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=40",
+     "verdict": "Supported",
+     "true_val": 40.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "21e52d7fccd2cf68",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "29e896e1ddee5384",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=24",
+     "verdict": "Supported",
+     "true_val": 24.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=232",
+     "verdict": "Supported",
+     "true_val": 232.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=40",
+     "verdict": "Supported",
+     "true_val": 40.0
+    }
+   ]
+  },
+  {
+   "sample_id": "78a60903cba31c78",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "0913b4c45a60e26e",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "0dcc72d3d752c114",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=18",
+     "verdict": "Supported",
+     "true_val": 18.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=174",
+     "verdict": "Supported",
+     "true_val": 174.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=30",
+     "verdict": "Supported",
+     "true_val": 30.0
+    }
+   ]
+  },
+  {
+   "sample_id": "821d4e6ad92a0fbe",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=32",
+     "verdict": "Supported",
+     "true_val": 32.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    }
+   ]
+  },
+  {
+   "sample_id": "50f8df039f92d774",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "d90f6e2a21a073ac",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 1,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "extortion_count=42",
+     "verdict": "Supported",
+     "true_val": 42.0
+    }
+   ]
+  },
+  {
+   "sample_id": "38622012ecfe4850",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "f6ad713e7b206b76",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 4,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=31",
+     "verdict": "Supported",
+     "true_val": 31.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "580085c379e2a031",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    },
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "b114c19123e99f41",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "33d1b5828d209f95",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "b2cbf9c9d97514fc",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "5fa0867be2b90425",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "16bc11ec0c6ec64c",
+   "task": "ransomware",
+   "group": "target",
+   "label": 1,
+   "final": 0,
+   "correct": false,
+   "n_claims": 2,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "76626bbd14dcf361",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "75b912d8650defda",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "ee1e43bb82c1c103",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "d13a5a68e22fb6cb",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "94406d4bd29ddc51",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    }
+   ]
+  },
+  {
+   "sample_id": "7a1fa171fb082d79",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "b7cbc0201abceef3",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "21236a736541b3bf",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "bf9460c36f7ffc7e",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 4,
+   "n_supported": 4,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    }
+   ]
+  },
+  {
+   "sample_id": "a3b54f8186c9eba4",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "opcode_unique=77",
+     "verdict": "Supported",
+     "true_val": 77.0
+    },
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "860b493bc225882b",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    }
+   ]
+  },
+  {
+   "sample_id": "22ae907bc1bf92a3",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "44f225e7f3149f47",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    }
+   ]
+  },
+  {
+   "sample_id": "30c8ff8a64778399",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "6706484d73132e8f",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "4569023516267e8c",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ransom_words_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    }
+   ]
+  },
+  {
+   "sample_id": "17e88c51e6086df7",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=8",
+     "verdict": "Supported",
+     "true_val": 8.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=8",
+     "verdict": "Supported",
+     "true_val": 8.0
+    }
+   ]
+  },
+  {
+   "sample_id": "848fcb7183842710",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "8d9aac02c370f275",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "fd6b24e1658e3a9f",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "576956efc791c8ab",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=11",
+     "verdict": "Supported",
+     "true_val": 11.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    }
+   ]
+  },
+  {
+   "sample_id": "fa368c57d02b9eb3",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=9",
+     "verdict": "Supported",
+     "true_val": 9.0
+    }
+   ]
+  },
+  {
+   "sample_id": "7efff0e78d221cea",
+   "task": "ransomware",
+   "group": "other",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 3,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=2",
+     "verdict": "Supported",
+     "true_val": 2.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "extortion_count=66",
+     "verdict": "Supported",
+     "true_val": 66.0
+    }
+   ]
+  },
+  {
+   "sample_id": "ff9ef3f71807789a",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "28a294fb99b781b0",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "opcode_unique=85",
+     "verdict": "Supported",
+     "true_val": 85.0
+    }
+   ]
+  },
+  {
+   "sample_id": "cfff953ada18b9c4",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "c43eefb9308e7a70",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=136",
+     "verdict": "Supported",
+     "true_val": 136.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "deeadbc6aade5e5e",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 0,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": []
+  },
+  {
+   "sample_id": "bf0e870e0b9de578",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 4,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=11",
+     "verdict": "Supported",
+     "true_val": 11.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=11",
+     "verdict": "Supported",
+     "true_val": 11.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "7375b09e59fb4adf",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 1,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    }
+   ]
+  },
+  {
+   "sample_id": "10e2e32cd3443749",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 0,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": false,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "5fb6b33d268850cf",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 1,
+   "n_contradicted": 0,
+   "n_unverifiable": 2,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=19",
+     "verdict": "Supported",
+     "true_val": 19.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    },
+    {
+     "type": "behavior",
+     "claim": "deletes?\\s+shadow",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "0e2a119e22947638",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 2,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 0,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=16",
+     "verdict": "Supported",
+     "true_val": 16.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "btc_count=16",
+     "verdict": "Supported",
+     "true_val": 16.0
+    }
+   ]
+  },
+  {
+   "sample_id": "b0506ade6699089a",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "btc_count=3",
+     "verdict": "Supported",
+     "true_val": 3.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "ltc_count=1",
+     "verdict": "Supported",
+     "true_val": 1.0
+    },
+    {
+     "type": "behavior",
+     "claim": "modif\\w+\\s+(?:the\\s+)?registry",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "2ac0d47bf02a5daa",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "xmr_count=4",
+     "verdict": "Supported",
+     "true_val": 4.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=5",
+     "verdict": "Supported",
+     "true_val": 5.0
+    },
+    {
+     "type": "behavior",
+     "claim": "(?:encrypts?|encryption of)\\s+(?:user\\s+)?files",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  },
+  {
+   "sample_id": "87da8b45e2fecadd",
+   "task": "ransomware",
+   "group": "benign",
+   "label": 0,
+   "final": 0,
+   "correct": true,
+   "n_claims": 3,
+   "n_supported": 2,
+   "n_contradicted": 0,
+   "n_unverifiable": 1,
+   "has_evidence": true,
+   "correct_but_contradicted": false,
+   "claims": [
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=8",
+     "verdict": "Supported",
+     "true_val": 8.0
+    },
+    {
+     "type": "feature_count",
+     "claim": "crypto_api_count=8",
+     "verdict": "Supported",
+     "true_val": 8.0
+    },
+    {
+     "type": "behavior",
+     "claim": "communicates?\\s+with\\s+(?:a\\s+)?(?:mining\\s+pool|C2)",
+     "verdict": "Unverifiable",
+     "true_val": null
+    }
+   ]
+  }
+ ]
+}

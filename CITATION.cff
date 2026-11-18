@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use MalLLMBench, please cite the accompanying paper."
+title: "MalLLMBench: A Benchmark for LLM-assisted Malware Analysis"
+type: dataset
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+version: 2.0
+date-released: "2026-01-01"
+repository-code: "https://github.com/TODO/MalLLMBench"
+keywords:
+  - malware analysis
+  - large language models
+  - benchmark
+  - security
+license:
+  - expression: "MIT"
+    type: "code"
+  - expression: "CC-BY-NC-4.0"
+    type: "data"

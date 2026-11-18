@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\centering
+\caption{F1 fidelity of class-proportionate subsets relative to the full Wild partitions. Mean and 95th percentile denote the corresponding statistics of absolute F1 deviation across 100 independent draws. Joint success is the percentage of draws in which both methods have an F1 deviation no greater than 0.05. Inference cost reports the total number of LLM tokens (input\,+\,output) required to evaluate the subset, measured per method from the full-scale runs (PE2: 632 tokens/sample on Cryptojacking and 842 on Ransomware; AV-Agent two-phase pipeline: 1{,}946 and 2{,}499 tokens/sample, respectively); the corresponding full-Wild cost is 12.6M/38.9M (Cryptojacking) and 14.7M/43.5M (Ransomware) tokens for PE2/AV-Agent. Sample reduction is calculated relative to the full Wild partition.}
+\label{tab:reprset_fidelity}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{llcccccccc}
+\toprule
+Task & Subset size
+& \multicolumn{2}{c}{PE2}
+& \multicolumn{2}{c}{AV-Agent}
+& Joint success (\%)
+& \multicolumn{2}{c}{Inference cost (tokens)}
+& Sample reduction (\%) \\
+\cmidrule(lr){3-4}
+\cmidrule(lr){5-6}
+\cmidrule(lr){8-9}
+& & Mean & 95th pct. & Mean & 95th pct. & & PE2 & AV-Agent & \\
+\midrule
+\multirow{5}{*}{Cryptojacking}
+& 500 & 0.0278 & 0.0576 & 0.0146 & 0.0340 & 85 & 0.32M & 0.97M & 97.5 \\
+& 1,000 & 0.0205 & 0.0510 & 0.0094 & 0.0240 & 94 & 0.63M & 1.95M & 95.0 \\
+& 1,500 & 0.0180 & 0.0413 & 0.0075 & 0.0175 & 98 & 0.95M & 2.92M & 92.5 \\
+& 2,000 & 0.0163 & 0.0389 & 0.0070 & 0.0173 & 99 & 1.26M & 3.89M & 90.0 \\
+& 3,000 & 0.0121 & 0.0263 & 0.0053 & 0.0127 & 100 & 1.90M & 5.84M & 85.0 \\
+\midrule
+\multirow{5}{*}{Ransomware}
+& 500 & 0.0283 & 0.0703 & 0.0293 & 0.0686 & 68 & 0.42M & 1.25M & 97.1 \\
+& 1,000 & 0.0208 & 0.0444 & 0.0196 & 0.0463 & 91 & 0.84M & 2.50M & 94.3 \\
+& 1,500 & 0.0176 & 0.0435 & 0.0175 & 0.0463 & 96 & 1.26M & 3.75M & 91.4 \\
+& 2,000 & 0.0143 & 0.0359 & 0.0151 & 0.0382 & 98 & 1.68M & 5.00M & 88.5 \\
+& 3,000 & 0.0114 & 0.0276 & 0.0122 & 0.0319 & 100 & 2.53M & 7.50M & 82.8 \\
+\bottomrule
+\end{tabular}
+\end{table*}
