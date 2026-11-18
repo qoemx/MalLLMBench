@@ -48,7 +48,7 @@ Full Wild detection performance (F1):
 data/manifests/     sample hashes, labels, splits, benign provenance, ReprSet IDs (2,000 per task)
 data/features/      static string-indicator features (TIF) for all 4 task×split cells
 code/data_processing/       benign collection scripts + v2 dataset assembly
-code/conventional_baselines/ TIF runnable baseline (configs for all 7 in configs/conventional/)
+code/conventional_baselines/ all 7 baselines: TIF fully runnable + exact v2 training scripts
 code/evaluation/    M1 stability / M2 subset fidelity / M3 evidence audit
 results/predictions/        full-Wild PER-SAMPLE predictions for PE2 & AV-Agent (both tasks)
 results/conventional/       per-sample confidence CSVs for the 7 baselines
