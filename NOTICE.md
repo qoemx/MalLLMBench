@@ -7,7 +7,7 @@
 
 ## Benign samples
 
-- The benign population was collected exclusively from official channels (MSYS2, Cygwin, conda/Anaconda, Python.org, Mozilla, VirtualBox, DikeDataset, THCRULL). Collection scripts under `code/data_processing/` document the exact sources and versions.
+- The benign population was collected from official package repositories and public benign datasets (MSYS2, Cygwin, conda/Anaconda, Python.org, Mozilla, VirtualBox, DikeDataset, and the benign split of Thcrull/win-exe-malware-analysis on HuggingFace). Collection scripts under `code/data_processing/` document the exact sources and versions.
 - Benign binaries are likewise not redistributed; the manifests allow re-downloading identical files from the original sources.
 
 ## Third-party methods
