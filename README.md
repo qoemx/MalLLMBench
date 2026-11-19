@@ -23,12 +23,12 @@ Both tasks use the same v2 benign population: 3,000 curated benign PEs per task 
 
 | Split | Target malware | Other malware | Benign | Total |
 |---|---|---|---|---|
-| Cryptojacking Lab | 2,000 | 4,000 | 1,000 | 7,000 |
+| Cryptojacking Lab | 2,000 | 3,999 | 1,000 | 6,999 |
 | Cryptojacking Wild | 6,000 | 12,000 | 2,000 | 20,000 |
 | Ransomware Lab | 2,000 | 4,000 | 1,000 | 7,000 |
-| Ransomware Wild | 5,141 | 10,282 | 2,000 | 17,423 |
+| Ransomware Wild | 5,140 | 10,282 | 2,000 | 17,422 |
 
-Total: 51,423 task-specific records. Two VirusShare hashes (`373c443e…` in Cryptojacking Lab, `f913a9a1…` in Ransomware Wild) appear on two rows each due to source-side duplication; their authoritative label (verified against the original label sources) is malware-positive=1, both rows are retained so counts match the paper and historical training, and all released prediction/label files use label=1 for them.
+Total: **51,421 unique task-specific records**. Two VirusShare hashes (`373c443e…` in Cryptojacking Lab, `f913a9a1…` in Ransomware Wild) each appeared on duplicate rows with conflicting labels in the source CSVs; the authoritative label (verified against the original label sources) is malware-positive=1, and one row per hash is retained (deduplicated). Cryptojacking Lab therefore has 6,999 rows and Ransomware Wild 17,422.
 
 Full Wild detection performance (F1):
 

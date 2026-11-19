@@ -6,12 +6,12 @@ MalLLMBench v2 augments the original (malicious-only) Cryptojacking and Ransomwa
 
 | Split | Target | Other malware | Benign | Total |
 |---|---|---|---|---|
-| Cryptojacking Lab | 2,000 | 4,000 | 1,000 | 7,000 |
+| Cryptojacking Lab | 2,000 | 3,999 | 1,000 | 6,999 |
 | Cryptojacking Wild | 6,000 | 12,000 | 2,000 | 20,000 |
 | Ransomware Lab | 2,000 | 4,000 | 1,000 | 7,000 |
-| Ransomware Wild | 5,141 | 10,282 | 2,000 | 17,423 |
+| Ransomware Wild | 5,140 | 10,282 | 2,000 | 17,422 |
 
-Total: 51,423 task-specific records.
+Total: 51,421 unique task-specific records (two source-side duplicate rows deduplicated; authoritative label = malware-positive).
 
 ## Malware side (unchanged from v1)
 
