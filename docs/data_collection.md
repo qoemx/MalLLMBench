@@ -10,7 +10,7 @@
 Collection scripts: `../code/data_processing/dl_*.py` (one per channel), `normalize.py`, `finalize.py`, `make_dataset.py`.
 
 Pipeline:
-1. **Download** from official channels: MSYS2/clang64 (package repos), Cygwin, conda (official pkgs), Python.org releases, Mozilla, VirtualBox, DikeDataset (public dataset), THCRULL (Microsoft trusted-hash list).
+1. **Download**: MSYS2/clang64 and Cygwin package repos; conda official packages; Python.org releases; Mozilla; VirtualBox components; DikeDataset; and the benign split of the Thcrull/win-exe-malware-analysis dataset on HuggingFace (PortableApps, SysinternalsSuite, and .NET directories).
 2. **Extract** inner PE payloads from installers/archives; record `sha256 / package / inner path / size` per file (channel manifests).
 3. **Verify**: MZ + PE signature magic check; drop anything failing either.
 4. **Dedup**: unique sha256; language-variant family dedup → 7,000 files, 2,495 families.

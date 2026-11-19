@@ -41,7 +41,7 @@ Full Wild detection performance (F1):
 ## Data sources & construction
 
 - **Malware**: VirusShare collections, labeled via AVClass2; Lab/Wild split by VirusTotal first-submission date (cutoff **2021-08-22**: Lab ≤ cutoff, Wild > cutoff). The malware partitions and the benign additions together constitute the released dataset.
-- **Benign**: 7,000 unique PEs (2,495 families) from official channels only — MSYS2, Cygwin, conda, Python.org, Mozilla, VirtualBox, DikeDataset, THCRULL (Microsoft trusted-hash list). Every file passed MZ+PE magic verification and sha256 dedup; no language-variant duplicates. Per task 3,000 benign were drawn by source-stratified random sampling (seed=42), then split Lab 1,000 / Wild 2,000. **Benign assignment is random, not time-based.**
+- **Benign**: 7,000 unique PEs (2,495 families) from official package repositories and public benign datasets — MSYS2/Cygwin package repos, conda, Python.org releases, Mozilla, VirtualBox components, DikeDataset, and the benign split of the Thcrull/win-exe-malware-analysis HuggingFace dataset (PortableApps/SysinternalsSuite/.NET programs). Every file passed MZ+PE magic verification and sha256 dedup; no language-variant duplicates. Per task 3,000 benign were drawn by source-stratified random sampling (seed=42), then split Lab 1,000 / Wild 2,000. **Benign assignment is random, not time-based.**
 - **No binaries in this repository.** We publish sample hashes, labels, splits, features, per-sample predictions and evaluation code only. Malicious binaries must be obtained from VirusShare under their EULA; benign software from the original official sources (download scripts under `code/data_processing/` document the exact provenance).
 
 ## What's in the box
