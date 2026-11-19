@@ -3,7 +3,7 @@
 All 7 baselines × 2 tasks. Two tiers of shipped code:
 
 1. **Fully runnable from this repo**: `run_tif.py` (uses shipped `data/features/`).
-2. **Exact training scripts** (as executed for the paper, paths point to the original compute environment — adapt paths to your layout): `v2_exp*.py` and `container_scripts/`. Hyperparameters are the authoritative record; per-experiment data provenance is documented in each cell's `data_manifest.txt` (mirrored in `configs/conventional/README.md`).
+2. **Exact training scripts** (as executed for the paper, paths point to the original compute environment — adapt paths to your layout): `exp0*.py` and `container_scripts/`. Hyperparameters are the authoritative record; per-experiment data provenance is documented in each cell's `data_manifest.txt` (mirrored in `configs/conventional/README.md`).
 
 | Cell | Method×Task | Code shipped | Notes |
 |---|---|---|---|

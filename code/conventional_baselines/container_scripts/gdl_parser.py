@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CFG-GIN v2 统一解析器: Ghidra GDL 格式(节点label='Block N\\nStart..\\nEnd..\\n<指令行们>')
+"""CFG-GIN 统一解析器: Ghidra GDL 格式(节点label='Block N\\nStart..\\nEnd..\\n<指令行们>')
 图构建: 节点=基本块(跨所有函数), 边=subgraph内的edge + (近似)线性顺序边
 特征: 每节点的指令统计15维(原版同款正则) + 图级8维拼节点 => 23维"""
 import os, re, glob, time

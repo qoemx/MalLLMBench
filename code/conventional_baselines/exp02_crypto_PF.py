@@ -27,8 +27,8 @@ print(f"恶意 Lab {XL_m.shape}, Wild {XW_m.shape}")
 # ---- 2. 良性特征 (v2 划分) ----
 d = np.load(f"{ROOT}/benign_pe/benign_pf_features.npz", allow_pickle=True)
 benign_map = {h: v for h, v in zip(d["hashes"], d["features"])}
-v2l = pd.read_csv(f"{ROOT}/dataset_v2/cryptojacking_lab_v2.csv")
-v2w = pd.read_csv(f"{ROOT}/dataset_v2/cryptojacking_wild_v2.csv")
+v2l = pd.read_csv(f"{ROOT}/dataset_v2/cryptojacking_lab.csv")
+v2w = pd.read_csv(f"{ROOT}/dataset_v2/cryptojacking_wild.csv")
 bl = [h for h in v2l[v2l["source"] == "benign"]["hash"] if h in benign_map]
 bw = [h for h in v2w[v2w["source"] == "benign"]["hash"] if h in benign_map]
 XL_b = np.array([benign_map[h] for h in bl])

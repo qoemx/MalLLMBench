@@ -24,7 +24,7 @@ bash run_baselines.sh
 ```
 
 - **TIF**: fully runnable end-to-end from shipped `data/features/` (label join supports 16-hex malware and 32-hex benign-sha256-prefix id forms).
-- **Other six** (EHm/EHc/PF/RB/OP/CFG-GIN): exact training scripts as executed for the paper are in `code/conventional_baselines/` (`v2_exp*.py` + `container_scripts/`); they reference container-side feature stores (512-dim histograms, raw bytes, Ghidra opcode sequences, GDL graphs) that are too large to redistribute. Per-cell Wild outputs ship in `results/conventional/` (14 CSVs = 7 methods × 2 tasks).
+- **Other six** (EHm/EHc/PF/RB/OP/CFG-GIN): exact training scripts as executed for the paper are in `code/conventional_baselines/` (`exp0*.py` + `container_scripts/`); they reference container-side feature stores (512-dim histograms, raw bytes, Ghidra opcode sequences, GDL graphs) that are too large to redistribute. Per-cell Wild outputs ship in `results/conventional/` (14 CSVs = 7 methods × 2 tasks).
 
 ## LLM methods
 

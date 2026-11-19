@@ -17,7 +17,7 @@ MalLLMBench measures not only *classification accuracy* but three additional dim
 | Cryptojacking detection | cryptojacking vs other malware vs benign | 6,999 | 20,000 |
 | Ransomware detection | ransomware vs other malware vs benign | 7,000 | 17,422 |
 
-Both tasks use the same v2 benign population: 3,000 curated benign PEs per task (disjoint across tasks, seed=42), drawn from a 7,000-sample pool of officially-sourced Windows software.
+Both tasks share one benign population: 3,000 curated benign PEs per task (disjoint across tasks, seed=42), drawn from a 7,000-sample pool of officially-sourced Windows software.
 
 ## Dataset statistics
 
@@ -40,7 +40,7 @@ Full Wild detection performance (F1):
 
 ## Data sources & construction
 
-- **Malware**: VirusShare collections, labeled via AVClass2; Lab/Wild split by VirusTotal first-submission date (cutoff **2021-08-22**: Lab ≤ cutoff, Wild > cutoff). Malware rows are identical to the published v1 splits — v2 only *adds* benign samples.
+- **Malware**: VirusShare collections, labeled via AVClass2; Lab/Wild split by VirusTotal first-submission date (cutoff **2021-08-22**: Lab ≤ cutoff, Wild > cutoff). The malware partitions and the benign additions together constitute the released dataset.
 - **Benign**: 7,000 unique PEs (2,495 families) from official channels only — MSYS2, Cygwin, conda, Python.org, Mozilla, VirtualBox, DikeDataset, THCRULL (Microsoft trusted-hash list). Every file passed MZ+PE magic verification and sha256 dedup; no language-variant duplicates. Per task 3,000 benign were drawn by source-stratified random sampling (seed=42), then split Lab 1,000 / Wild 2,000. **Benign assignment is random, not time-based.**
 - **No binaries in this repository.** We publish sample hashes, labels, splits, features, per-sample predictions and evaluation code only. Malicious binaries must be obtained from VirusShare under their EULA; benign software from the original official sources (download scripts under `code/data_processing/` document the exact provenance).
 
@@ -49,8 +49,8 @@ Full Wild detection performance (F1):
 ```
 data/manifests/     sample hashes, labels, splits, benign provenance, ReprSet IDs (2,000 per task)
 data/features/      static string-indicator features (TIF) for all 4 task×split cells
-code/data_processing/       benign collection scripts + v2 dataset assembly
-code/conventional_baselines/ all 7 baselines: TIF fully runnable + exact v2 training scripts
+code/data_processing/       benign collection scripts + dataset assembly
+code/conventional_baselines/ all 7 baselines: TIF fully runnable + exact training scripts
 code/evaluation/    M1 stability / M2 subset fidelity / M3 evidence audit
 results/predictions/        full-Wild PER-SAMPLE predictions for PE2 & AV-Agent (both tasks)
 results/conventional/       per-sample confidence CSVs for the 7 baselines

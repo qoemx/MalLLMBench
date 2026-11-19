@@ -3,11 +3,11 @@
 ## Malware
 
 - VirusShare collections (MD5-named), family classification via AVClass2.
-- Temporal split by VirusTotal first-submission date; cutoff **2021-08-22**. Lab = ≤ cutoff, Wild = > cutoff. v2 keeps every v1 malware row untouched.
+- Temporal split by VirusTotal first-submission date; cutoff **2021-08-22**. Lab = ≤ cutoff, Wild = > cutoff.
 
-## Benign (v2 addition)
+## Benign
 
-Collection scripts: `../code/data_processing/dl_*.py` (one per channel), `normalize.py`, `finalize.py`, `make_dataset_v2.py`.
+Collection scripts: `../code/data_processing/dl_*.py` (one per channel), `normalize.py`, `finalize.py`, `make_dataset.py`.
 
 Pipeline:
 1. **Download** from official channels: MSYS2/clang64 (package repos), Cygwin, conda (official pkgs), Python.org releases, Mozilla, VirtualBox, DikeDataset (public dataset), THCRULL (Microsoft trusted-hash list).

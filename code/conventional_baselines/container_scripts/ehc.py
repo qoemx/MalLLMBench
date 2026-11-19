@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""EHc v2(两任务) — 原版 EHc_malware_model.py 的 CNN 架构逐字复刻
+"""EHc(两任务) — 原版 EHc_malware_model.py 的 CNN 架构逐字复刻
 (MalwareDetector: 512->23x23, Conv60(k2)+MaxPool, Conv200(k2)+MaxPool, Dense500, Sigmoid)
 数据: hist_features/{miner,ransom_pos,ransom_neg,benign_miner,benign_ransom} 的512维txt
 挖矿: lab=lab_label.csv恶意 + benign_miner(1000) | wild=wild_label.csv + benign_miner(2000)
@@ -75,7 +75,7 @@ def metrics(y, p):
             recall_score(y, p, zero_division=0), f1_score(y, p, zero_division=0))
 
 def run(task, lab_csv, wild_csv, ben_dirs):
-    print(f'===== {task} EHc v2 =====', flush=True)
+    print(f'===== {task} EHc =====', flush=True)
     rows, feats, ys = [], [], []
     for c in [lab_csv, wild_csv]:
         pass
@@ -145,7 +145,7 @@ def run(task, lab_csv, wild_csv, ben_dirs):
     pw = (wprobs >= 0.5).astype(int)
     lm = np.mean(lms, axis=0); wm = metrics(yW, pw)
     fpr = float(pw[bmW].mean()) if bmW.any() else -1
-    print(f'\n===== {task} EHc v2 结果 =====')
+    print(f'\n===== {task} EHc 结果 =====')
     print(f'Lab(五折): ACC={lm[0]:.4f} PRE={lm[1]:.4f} REC={lm[2]:.4f} F1={lm[3]:.4f}')
     print(f'Wild:      ACC={wm[0]:.4f} PRE={wm[1]:.4f} REC={wm[2]:.4f} F1={wm[3]:.4f}')
     print(f'良性FPR={fpr:.4f} (n={int(bmW.sum())})')
@@ -157,9 +157,9 @@ def run(task, lab_csv, wild_csv, ben_dirs):
 if __name__ == '__main__':
     which = sys.argv[1] if len(sys.argv) > 1 else 'both'
     if which in ('miner', 'both'):
-        run('挖矿', f'{LAB}/cryptojacking_lab_v2.csv', f'{LAB}/cryptojacking_wild_v2.csv',
+        run('挖矿', f'{LAB}/cryptojacking_lab.csv', f'{LAB}/cryptojacking_wild.csv',
             [f'{B}/hist_features/miner', f'{B}/hist_features/benign_miner'])
     if which in ('ransom', 'both'):
-        run('勒索', f'{LAB}/ransomware_lab_v2.csv', f'{LAB}/ransomware_wild_v2.csv',
+        run('勒索', f'{LAB}/ransomware_lab.csv', f'{LAB}/ransomware_wild.csv',
             [f'{B}/hist_features/ransom_pos', f'{B}/hist_features/ransom_neg', f'{B}/hist_features/benign_ransom'])
     print('EHC_V2_DONE')

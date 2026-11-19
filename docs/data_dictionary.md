@@ -16,9 +16,9 @@ Malware-only ground truth (no benign rows), full MD5.
 
 ### benign_source_counts.csv
 Per-channel counts for the 7,000-file benign pool vs. the 3,000 used per task.
-### benign_{task}_v2.csv
+### benign_{task}.csv
 The 3,000 benign samples adopted by each task: sha256, source, family, size.
-### benign_v2_hashes.txt
+### benign_hashes.txt
 All 6,000 adopted benign sha256 hashes (both tasks, disjoint).
 ### benign_id_map_ransomware.csv
 32-hex feature-file id ↔ full 64-hex sha256 (benign rows in ransomware manifests/features).

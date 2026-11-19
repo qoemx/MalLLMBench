@@ -123,5 +123,5 @@ def run(task, mal_dir, mal_strip, lab_csv, wild_csv, v2l_csv, v2w_csv, ben_dir):
 if __name__ == '__main__':
     run('挖矿', f'{B}/miner_cfg/gdl_out', 'VirusShare_',
         f'{LAB}/lab_label.csv', f'{LAB}/wild_label.csv',
-        f'{LAB}/cryptojacking_lab_v2.csv', f'{LAB}/cryptojacking_wild_v2.csv',
+        f'{LAB}/cryptojacking_lab.csv', f'{LAB}/cryptojacking_wild.csv',
         f'{B}/benign_gdl_out')

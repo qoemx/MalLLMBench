@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""RB(MalConv) 置信度+权重补存 — 原版 malconv_v2.py 逐字复刻
+"""RB(MalConv) 置信度+权重补存 — 原版 malconv 脚本逐字复刻
 唯一差异: 保存每折权重 + wild置信度CSV(带filename/is_benign)
 用法: python3 rb_standalone.py miner|ransom"""
 import os, sys, json, time, glob
@@ -125,11 +125,11 @@ if __name__ == '__main__':
     which = sys.argv[1]
     if which == 'miner':
         run_task('crypto_RB', '挖矿', f'{LAB}/lab_label.csv', f'{LAB}/wild_label.csv',
-                 f'{LAB}/cryptojacking_lab_v2.csv', f'{LAB}/cryptojacking_wild_v2.csv',
+                 f'{LAB}/cryptojacking_lab.csv', f'{LAB}/cryptojacking_wild.csv',
                  '/home/aapt-u1/v2_benign_in')
     else:
-        # 勒索: 原版malconv_ransom_v2.py口径
+        # 勒索: 原版 malconv_ransomware.py 口径
         run_task('ransom_RB', '勒索', f'{LAB}/balanced_lab_dataset_1to2.csv', f'{LAB}/balanced_wild_dataset_1to2.csv',
-                 f'{LAB}/ransomware_lab_v2.csv', f'{LAB}/ransomware_wild_v2.csv',
+                 f'{LAB}/ransomware_lab.csv', f'{LAB}/ransomware_wild.csv',
                  f'{BASE}/v2_benign_in_r')
     print("RB_STANDALONE_DONE")

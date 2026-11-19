@@ -149,7 +149,7 @@ if __name__ == "__main__":
     which = sys.argv[1]
     if which == "eh_miner":
         XL, yL, XW, yW, fnW, bmW = build_hist_task(
-            f"{LAB}/cryptojacking_lab_v2.csv", f"{LAB}/cryptojacking_wild_v2.csv",
+            f"{LAB}/cryptojacking_lab.csv", f"{LAB}/cryptojacking_wild.csv",
             [f"{B}/hist_features/miner", f"{B}/hist_features/benign_miner"])
         print(f"Lab {len(XL)} Wild {len(XW)}", flush=True)
         def tr(XL, yL, tr_idx, f):
@@ -159,7 +159,7 @@ if __name__ == "__main__":
         run_conf("crypto_EHm", XL, yL, XW, yW, fnW, bmW, tr)
     elif which == "ehc_miner":
         XL, yL, XW, yW, fnW, bmW = build_hist_task(
-            f"{LAB}/cryptojacking_lab_v2.csv", f"{LAB}/cryptojacking_wild_v2.csv",
+            f"{LAB}/cryptojacking_lab.csv", f"{LAB}/cryptojacking_wild.csv",
             [f"{B}/hist_features/miner", f"{B}/hist_features/benign_miner"])
         print(f"Lab {len(XL)} Wild {len(XW)}", flush=True)
         class _DS(torch.utils.data.Dataset):
@@ -190,7 +190,7 @@ if __name__ == "__main__":
         run_conf("crypto_EHc", XL, yL, XW, yW, fnW, bmW, tr)
     elif which == "ehc_ransom":
         XL, yL, XW, yW, fnW, bmW = build_hist_task(
-            f"{LAB}/ransomware_lab_v2.csv", f"{LAB}/ransomware_wild_v2.csv",
+            f"{LAB}/ransomware_lab.csv", f"{LAB}/ransomware_wild.csv",
             [f"{B}/hist_features/ransom_pos", f"{B}/hist_features/ransom_neg", f"{B}/hist_features/benign_ransom"])
         print(f"Lab {len(XL)} Wild {len(XW)}", flush=True)
         class _DS(torch.utils.data.Dataset):
@@ -224,11 +224,11 @@ if __name__ == "__main__":
         import glob as _g
         if which == "rb_miner":
             bin_mal = f"{B}/miner_task_bin/挖矿"; ben_dir = "/home/aapt-u1/v2_benign_in"
-            lc, wc = f"{LAB}/cryptojacking_lab_v2.csv", f"{LAB}/cryptojacking_wild_v2.csv"
+            lc, wc = f"{LAB}/cryptojacking_lab.csv", f"{LAB}/cryptojacking_wild.csv"
             name = "crypto_RB"
         else:
             bin_mal = None; ben_dir = f"{B}/v2_benign_in_r"
-            lc, wc = f"{LAB}/ransomware_lab_v2.csv", f"{LAB}/ransomware_wild_v2.csv"
+            lc, wc = f"{LAB}/ransomware_lab.csv", f"{LAB}/ransomware_wild.csv"
             name = "ransom_RB"
         def collect(df):
             files, ys, fns, bm_ = [], [], [], []
@@ -314,8 +314,8 @@ if __name__ == "__main__":
                     if h in mal_map:
                         X.append(np.asarray(mal_map[h], dtype=np.float32).reshape(163,65)); y.append(int(r['label'])); fn.append(h); bm_.append(False)
             return np.array(X, dtype=np.float32), np.array(y), fn, np.array(bm_)
-        lc = f"{LAB}/cryptojacking_lab_v2.csv" if which == "gi_miner" else f"{LAB}/ransomware_lab_v2.csv"
-        wc = f"{LAB}/cryptojacking_wild_v2.csv" if which == "gi_miner" else f"{LAB}/ransomware_wild_v2.csv"
+        lc = f"{LAB}/cryptojacking_lab.csv" if which == "gi_miner" else f"{LAB}/ransomware_lab.csv"
+        wc = f"{LAB}/cryptojacking_wild.csv" if which == "gi_miner" else f"{LAB}/ransomware_wild.csv"
         XL, yL, _, _ = collect(pd.read_csv(lc))
         XW, yW, fnW, bmW = collect(pd.read_csv(wc))
         print(f"Lab {len(XL)} Wild {len(XW)}", flush=True)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""MalConv v2 勒索任务(容器GPU): 恶意(wild_ransom_bin+wild_nonrw_bin) + 良性(~/v2_benign_in_r)
+"""MalConv 勒索任务(容器GPU): 恶意(wild_ransom_bin+wild_nonrw_bin) + 良性(~/v2_benign_in_r)
 Lab: balanced_lab(6000恶意,其中正2000) + 良性1000; Wild: balanced_wild(15423) + 良性2000"""
 import os, json, time, glob
 import numpy as np
@@ -68,13 +68,13 @@ def infer(model, loader):
     return np.concatenate(outs)
 
 def main():
-    print('===== 勒索 MalConv v2 =====', flush=True)
+    print('===== 勒索 MalConv =====', flush=True)
     mal = index_malware()
     print(f'恶意索引: {len(mal)}', flush=True)
     lab = pd.read_csv(f'{LAB}/balanced_lab_dataset_1to2.csv')
     wild = pd.read_csv(f'{LAB}/balanced_wild_dataset_1to2.csv')
-    v2l = pd.read_csv(f'{LAB}/ransomware_lab_v2.csv')
-    v2w = pd.read_csv(f'{LAB}/ransomware_wild_v2.csv')
+    v2l = pd.read_csv(f'{LAB}/ransomware_lab.csv')
+    v2w = pd.read_csv(f'{LAB}/ransomware_wild.csv')
 
     def build(df, benign_hashes):
         items = []

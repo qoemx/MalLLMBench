@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""挖矿 OP-BiLSTM v2 —— 原版 train_improved.py 架构逐行复刻
+"""挖矿 OP-BiLSTM —— 原版 train_improved.py 架构逐行复刻
 (ImprovedTextCNN_LSTM + FocalLoss + AdamW + warmup/cosine + patience15 + thr0.5)
-差异仅: ①输入=op_lab_v2.csv(恶意6000沿用原fold + 良性915追加) ②Wild=op_wild_v2.csv五折均值推理"""
+差异仅: ①输入=op_lab.csv(malware rows reuse original folds + benign appended) ②Wild=op_wild.csv五折均值推理"""
 import os, glob, pickle, time
 import numpy as np
 import pandas as pd
@@ -123,8 +123,8 @@ def metrics(y, p):
 
 if __name__ == '__main__':
     os.makedirs(f"{W}/models_op_v2", exist_ok=True)
-    lab = pd.read_csv(f"{W}/op_lab_v2.csv")
-    wild = pd.read_csv(f"{W}/op_wild_v2.csv")
+    lab = pd.read_csv(f"{W}/op_lab.csv")
+    wild = pd.read_csv(f"{W}/op_wild.csv")
     lab['opcode_seq'] = lab['opcode_seq'].fillna('').astype(str)
     wild['opcode_seq'] = wild['opcode_seq'].fillna('').astype(str)
     lab = lab[lab['opcode_seq'].str.split().str.len() > 0].reset_index(drop=True)
@@ -195,7 +195,7 @@ if __name__ == '__main__':
     n_ben = int((wy == 0).sum())
     fpr = float(wpred[wy == 0].mean()) if n_ben else -1
     lm = np.mean(lms, axis=0); wm = metrics(wy, wpred)
-    print("\n===== 挖矿 OP-BiLSTM v2 结果 =====")
+    print("\n===== 挖矿 OP-BiLSTM 结果 =====")
     print(f"Lab(五折): ACC={lm[0]:.4f} PRE={lm[1]:.4f} REC={lm[2]:.4f} F1={lm[3]:.4f}")
     print(f"Wild:      ACC={wm[0]:.4f} PRE={wm[1]:.4f} REC={wm[2]:.4f} F1={wm[3]:.4f}")
     print(f"良性FPR={fpr:.4f} (n={n_ben})")

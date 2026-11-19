@@ -1,8 +1,8 @@
-# Dataset Card — MalLLMBench v2
+# Dataset Card — MalLLMBench
 
 ## Summary
 
-MalLLMBench v2 augments the original (malicious-only) Cryptojacking and Ransomware detection datasets with a curated benign population, yielding two tasks × two splits with realistic benign controls:
+MalLLMBench provides Cryptojacking and Ransomware detection with a curated benign population, yielding two tasks × two splits with realistic benign controls:
 
 | Split | Target | Other malware | Benign | Total |
 |---|---|---|---|---|
@@ -13,12 +13,12 @@ MalLLMBench v2 augments the original (malicious-only) Cryptojacking and Ransomwa
 
 Total: 51,421 unique task-specific records (two source-side duplicate rows deduplicated; authoritative label = malware-positive).
 
-## Malware side (unchanged from v1)
+## Malware side
 
 - Source: VirusShare; family labels via AVClass2.
-- Lab/Wild partition: VirusTotal first-submission date, cutoff **2021-08-22** (Lab ≤ cutoff, Wild > cutoff). The v2 release does not touch any v1 malware row.
+- Lab/Wild partition: VirusTotal first-submission date, cutoff **2021-08-22** (Lab ≤ cutoff, Wild > cutoff).
 
-## Benign side (new in v2)
+## Benign side
 
 - Pool: 7,000 unique PE files (2,495 software families), sha256-named, MZ+PE dual-verified.
 - Channels: MSYS2 (2,521), DikeDataset (1,113), Python.org (1,014), THCRULL trusted-hash list (903), Cygwin (800), conda (271), VirtualBox (224), Mozilla (142), clang64 (12).

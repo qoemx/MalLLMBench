@@ -1,4 +1,4 @@
-# Conventional baseline configs (v2)
+# Conventional baseline configs ()
 
 All baselines: 5-fold CV training on Lab (malicious + benign together), full Wild inference, per-sample confidence CSV + 5-fold weights + metrics JSON (triad per experiment).
 

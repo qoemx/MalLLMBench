@@ -57,7 +57,7 @@ def build(ransom: bool, split: str, benign_shas):
     bdf2 = bdf[keep]
     merged = pd.concat([out2, bdf2], ignore_index=True)
     task = "ransomware" if ransom else "cryptojacking"
-    dst = os.path.join(OUT, f"{task}_{split}_v2.csv")
+    dst = os.path.join(OUT, f"{task}_{split}.csv")
     merged.to_csv(dst, index=False)
     # 统计
     n_pos = (merged["label"] == 1).sum(); n_mal0 = ((merged["label"] == 0) & (merged["source"] != "benign")).sum()

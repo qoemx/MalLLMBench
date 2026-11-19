@@ -2,14 +2,14 @@
 NOTE on TIF reproduction fidelity:
 - Cryptojacking: repo retrain reproduces published F1 within 0.001 (0.9294 vs 0.9288).
 - Ransomware: repo retrain gives ~0.657 vs published 0.6475. The published confidence CSV
-  was produced by the original container pipeline (train_lightGBM.py verbatim, full v2
+  was produced by the original container pipeline (train_lightGBM.py verbatim, full
   split); the difference stems from fold-assignment details (the original reused saved
   fold indices rather than regenerating StratifiedKFold). For paper numbers use the
   published confidence CSVs in results/conventional/; run_tif.py is a faithful-but-
   simplified reimplementation for pipeline verification.
 """
 #!/usr/bin/env python3
-"""Run TIF baseline (LightGBM 5-fold) on shipped string features. v2 — fixed label join.
+"""Run TIF baseline (LightGBM 5-fold) on shipped string features. — fixed label join.
 Usage: python run_tif.py --task cryptojacking|ransomware
 
 Label join (fixed): features use sample_id == manifests filename (16-hex prefix);

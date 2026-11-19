@@ -48,8 +48,8 @@ XW_m, yW_m = load_gi(wild["hash"].values, wild["label"].values)
 # ---- 2. 良性 ----
 d = np.load(f"{BENIGN}/benign_gi_features.npz", allow_pickle=True)
 bmap = {h: v for h, v in zip(d["hashes"], d["features"])}
-v2l = pd.read_csv(f"{ROOT}/dataset_v2/ransomware_lab_v2.csv")
-v2w = pd.read_csv(f"{ROOT}/dataset_v2/ransomware_wild_v2.csv")
+v2l = pd.read_csv(f"{ROOT}/dataset_v2/ransomware_lab.csv")
+v2w = pd.read_csv(f"{ROOT}/dataset_v2/ransomware_wild.csv")
 XL_b = np.array([bmap[h] for h in v2l[v2l["source"]=="benign"]["hash"] if h in bmap], dtype=np.float32)
 XW_b = np.array([bmap[h] for h in v2w[v2w["source"]=="benign"]["hash"] if h in bmap], dtype=np.float32)
 
