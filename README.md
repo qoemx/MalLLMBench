@@ -17,7 +17,7 @@ MalLLMBench measures not only *classification accuracy* but three additional dim
 | Cryptojacking detection | cryptojacking vs other malware vs benign | 6,999 | 20,000 |
 | Ransomware detection | ransomware vs other malware vs benign | 7,000 | 17,422 |
 
-Each task has its own benign set: 3,000 curated benign PEs for Cryptojacking and a disjoint set of 3,000 for Ransomware (no overlap between tasks; both drawn from one 7,000-sample pool of officially-sourced Windows software, seed=42).
+Each task has its own benign set: 3,000 curated benign PEs for Cryptojacking and a disjoint set of 3,000 for Ransomware.
 
 ## Dataset statistics
 
@@ -27,8 +27,6 @@ Each task has its own benign set: 3,000 curated benign PEs for Cryptojacking and
 | Cryptojacking Wild | 6,000 | 12,000 | 2,000 | 20,000 |
 | Ransomware Lab | 2,000 | 4,000 | 1,000 | 7,000 |
 | Ransomware Wild | 5,140 | 10,282 | 2,000 | 17,422 |
-
-Total: **51,421 unique task-specific records**. Two VirusShare hashes (`373c443e…` in Cryptojacking Lab, `f913a9a1…` in Ransomware Wild) each appeared on duplicate rows with conflicting labels in the source CSVs; the authoritative label (verified against the original label sources) is malware-positive=1, and one row per hash is retained (deduplicated). Cryptojacking Lab therefore has 6,999 rows and Ransomware Wild 17,422.
 
 Full Wild detection performance (F1):
 
@@ -41,7 +39,7 @@ Full Wild detection performance (F1):
 ## Data sources & construction
 
 - **Malware**: VirusShare collections, labeled via AVClass2; Lab/Wild split by VirusTotal first-submission date (cutoff **2021-08-22**: Lab ≤ cutoff, Wild > cutoff). The malware partitions and the benign additions together constitute the released dataset.
-- **Benign**: 7,000 unique PEs (2,495 families) from official package repositories and public benign datasets — MSYS2/Cygwin package repos, conda, Python.org releases, Mozilla, VirtualBox components, DikeDataset, and the benign split of the Thcrull/win-exe-malware-analysis HuggingFace dataset (PortableApps/SysinternalsSuite/.NET programs). Every file passed MZ+PE magic verification and sha256 dedup; no language-variant duplicates. Per task 3,000 benign were drawn by source-stratified random sampling (seed=42), then split Lab 1,000 / Wild 2,000. **Benign assignment is random, not time-based.**
+- **Benign**: 7,000 unique PEs (2,495 families) from official package repositories and public benign datasets — MSYS2/Cygwin package repos, conda, Python.org releases, Mozilla, VirtualBox components, DikeDataset, and the benign split of the Thcrull/win-exe-malware-analysis HuggingFace dataset (PortableApps/SysinternalsSuite/.NET programs). Every file passed MZ+PE magic verification and sha256 dedup; no language-variant duplicates. Per task 3,000 benign were drawn by source-stratified random sampling (seed=42), then split Lab 1,000 / Wild 2,000.
 - **No binaries in this repository.** We publish sample hashes, labels, splits, features, per-sample predictions and evaluation code only. Malicious binaries must be obtained from VirusShare under their EULA; benign software from the original official sources (download scripts under `code/data_processing/` document the exact provenance).
 
 ## What's in the box
