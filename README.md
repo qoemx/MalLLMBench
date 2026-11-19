@@ -1,6 +1,6 @@
 # MalLLMBench — Anonymous Artifact (double-blind review)
 
-**A benchmark for evaluating LLM-assisted malware analysis on Cryptojacking and Ransomware detection, with benign-population controls, stability/fidelity/content-audit protocols.**
+**A benchmark for evaluating LLM-assisted malware analysis on Cryptojacking and Ransomware detection, with stability/fidelity/content-audit protocols.**
 
 > This repository is an anonymized artifact submission. Author information is withheld for double-blind review.
 
