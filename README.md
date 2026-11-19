@@ -14,8 +14,8 @@ MalLLMBench measures not only *classification accuracy* but three additional dim
 
 | Task | Goal | Lab (train) | Wild (test) |
 |---|---|---|---|
-| Cryptojacking detection | cryptojacking vs other malware vs benign | 7,000 | 20,000 |
-| Ransomware detection | ransomware vs other malware vs benign | 7,000 | 17,423 |
+| Cryptojacking detection | cryptojacking vs other malware vs benign | 6,999 | 20,000 |
+| Ransomware detection | ransomware vs other malware vs benign | 7,000 | 17,422 |
 
 Both tasks use the same v2 benign population: 3,000 curated benign PEs per task (disjoint across tasks, seed=42), drawn from a 7,000-sample pool of officially-sourced Windows software.
 
@@ -34,8 +34,8 @@ Full Wild detection performance (F1):
 
 | Method | Cryptojacking Wild | Ransomware Wild |
 |---|---|---|
-| PE2Prompt (LLM, qwen38-27b) | 0.5268 | 0.4062 (voting variant; single-word variant degenerates to 0.0) |
-| AV-Agent (two-phase pipeline, qwen38-27b) | 0.8475 | 0.5359 |
+| PE2Prompt (LLM, qwen38-27b) | 0.5268 | 0.4064 (voting variant; single-word variant degenerates to 0.0) |
+| AV-Agent (two-phase pipeline, qwen38-27b) | 0.8475 | 0.5357 |
 | 7 conventional baselines (EHm, EHc, PF, RB/MalConv, OP-BiLSTM, CFG-GIN, TIF) | see `results/tables/detection_wild.csv` | see `results/tables/detection_wild.csv` |
 
 ## Data sources & construction

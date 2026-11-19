@@ -9,7 +9,7 @@ MalLLMBench v2 augments the original (malicious-only) Cryptojacking and Ransomwa
 | Cryptojacking Lab | 2,000 | 3,999 | 1,000 | 6,999 |
 | Cryptojacking Wild | 6,000 | 12,000 | 2,000 | 20,000 |
 | Ransomware Lab | 2,000 | 4,000 | 1,000 | 7,000 |
-| Ransomware Wild | 5,140 | 10,282 | 2,000 | 17,422 |
+| Ransomware Wild | 5,141 | 10,281 | 2,000 | 17,422 |
 
 Total: 51,421 unique task-specific records (two source-side duplicate rows deduplicated; authoritative label = malware-positive).
 
@@ -30,7 +30,7 @@ Total: 51,421 unique task-specific records (two source-side duplicate rows dedup
 
 - 60 Cryptojacking-Wild PE2 records lack EMBER prompts (oversized binaries); PE2 metrics computed on 19,940/20,000.
 - 19 Ransomware-Wild other-malware records lack PE2 predictions (17,403/17,422 effective).
-- OP-BiLSTM effective n after empty-sequence filtering: 16,780 (Cryptojacking) / 16,962 (Ransomware).
+- OP-BiLSTM effective n after empty-sequence filtering: 16,780 (Cryptojacking) / 16,961 (Ransomware).
 
 ## ReprSet (representative subsets)
 

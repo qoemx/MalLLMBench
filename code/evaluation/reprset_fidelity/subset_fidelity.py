@@ -26,6 +26,13 @@ def load_pred(fn):
 
 pe2 = load_pred("results/predictions/pe2_cryptojacking_wild_predictions.csv")
 av = load_pred("results/predictions/avagent_cryptojacking_wild_predictions.csv")
+# paper caliber: each method's OWN full-Wild F1 as baseline (all samples with that method's valid prediction)
+def full_f1(pm):
+    tp = sum(1 for h, p in pm.items() if p == 1 and wild_lab[h] == 1)
+    fp = sum(1 for h, p in pm.items() if p == 1 and wild_lab[h] == 0)
+    fn = sum(1 for h, p in pm.items() if p == 0 and wild_lab[h] == 1)
+    return 2*tp/max(2*tp+fp+fn, 1)
+F_pe2, F_av = full_f1(pe2), full_f1(av)
 pool = [h for h in wild_lab if h in pe2 and h in av]
 cats_pool = {"cryptojacking": [], "other_malware": [], "benign": []}
 for h in pool:
@@ -39,8 +46,7 @@ def f1_of(ids, pm):
     fn = sum(1 for h in ids if pm[h] == 0 and wild_lab[h] == 1)
     return 2*tp/max(2*tp+fp+fn, 1)
 
-F_pe2, F_av = f1_of(pool, pe2), f1_of(pool, av)
-print(f"full F1: PE2={F_pe2:.4f} AV={F_av:.4f}")
+print(f"full F1 (own-Wild baselines): PE2={F_pe2:.4f} AV={F_av:.4f}; joint pool={len(pool)}")
 
 rows, summary = [], {}
 for N in (500, 1000, 1500, 2000, 3000):

@@ -8,6 +8,13 @@ def f1_from_counts(tp, fp, fn):
 def from_pred_csv(path):
     """Per-sample prediction CSV: sample_id,label,prediction[,input_tokens,...]"""
     rows = list(csv.DictReader(open(path)))
+    task_hint = "cryptojacking" if "cryptojacking" in path else "ransomware"
+    mani = {}
+    for r2 in csv.DictReader(open(f"data/manifests/{task_hint}_wild.csv")):
+        h2 = (r2.get("hash") or r2["filename"]).removesuffix(".exe").removeprefix("VirusShare_")[:32]
+        mani[h2] = r2.get("source") == "benign"
+        mani[h2[:16]] = mani[h2]
+    ben = [r for r in rows if mani.get(r["sample_id"][:32], mani.get(r["sample_id"][:16], False))]
     def val(r, k):
         v = r.get(k, "")
         try: return int(v)
@@ -17,8 +24,9 @@ def from_pred_csv(path):
     fn = sum(1 for r in rows if val(r, "prediction") == 0 and val(r, "label") == 1)
     tn = sum(1 for r in rows if val(r, "prediction") == 0 and val(r, "label") == 0)
     toks = sum(int(r.get("input_tokens", 0) or 0) + int(r.get("output_tokens", 0) or 0) for r in rows)
+    bfp = sum(1 for r in ben if val(r, "prediction") == 1) / max(len(ben), 1)
     return dict(n=len(rows), ACC=(tp+tn)/max(len(rows),1), PRE=tp/max(tp+fp,1),
-                REC=tp/max(tp+fn,1), F1=f1_from_counts(tp,fp,fn),
+                REC=tp/max(tp+fn,1), F1=f1_from_counts(tp,fp,fn), benign_FPR=bfp,
                 TP=tp, FP=fp, FN=fn, TN=tn, total_tokens=toks)
 
 def from_conf_csv(path):
@@ -42,8 +50,10 @@ def main():
     os.makedirs(a.out_dir, exist_ok=True)
     rows = [["method", "task", "source_file", "n", "ACC", "PRE", "REC", "F1",
              "benign_FPR", "TP", "FP", "FN", "TN", "total_tokens"]]
+    OFFICIAL = {"pe2_cryptojacking_wild_predictions.csv","pe2_ransomware_wild_predictions.csv",
+                "avagent_cryptojacking_wild_predictions.csv","avagent_ransomware_wild_predictions.csv"}
     for f in sorted(os.listdir(a.pred)):
-        if f.endswith(".csv") and "predictions" in f:
+        if f in OFFICIAL:
             d = from_pred_csv(os.path.join(a.pred, f))
             method, task = f.split("_", 1)
             task = task.rsplit("_", 2)[0]
