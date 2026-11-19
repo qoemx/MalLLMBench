@@ -22,7 +22,7 @@ Total: 51,421 unique task-specific records (two source-side duplicate rows dedup
 
 - Pool: 7,000 unique PE files (2,495 software families), sha256-named, MZ+PE dual-verified.
 - Channels: MSYS2 (2,521), DikeDataset (1,113), Python.org (1,014), THCRULL trusted-hash list (903), Cygwin (800), conda (271), VirtualBox (224), Mozilla (142), clang64 (12).
-- Per task: 3,000 drawn by source-stratified random sampling (seed=42); the two tasks' benign sets are disjoint; 1,000 spare.
+- Each task uses its OWN benign set: 3,000 for Cryptojacking and a completely disjoint 3,000 for Ransomware (intersection = 0, verified), both drawn by source-stratified random sampling (seed=42); 1,000 pool files remain unused.
 - Within task: Lab 1,000 / Wild 2,000 by the same random rule. **Benign split is NOT time-based** — this is intentional and documented as such.
 - `benign =` label 0 with `source=benign` in the manifests; never infer benign status from filename shape.
 

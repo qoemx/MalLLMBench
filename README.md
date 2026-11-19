@@ -17,7 +17,7 @@ MalLLMBench measures not only *classification accuracy* but three additional dim
 | Cryptojacking detection | cryptojacking vs other malware vs benign | 6,999 | 20,000 |
 | Ransomware detection | ransomware vs other malware vs benign | 7,000 | 17,422 |
 
-Both tasks share one benign population: 3,000 curated benign PEs per task (disjoint across tasks, seed=42), drawn from a 7,000-sample pool of officially-sourced Windows software.
+Each task has its own benign set: 3,000 curated benign PEs for Cryptojacking and a disjoint set of 3,000 for Ransomware (no overlap between tasks; both drawn from one 7,000-sample pool of officially-sourced Windows software, seed=42).
 
 ## Dataset statistics
 
