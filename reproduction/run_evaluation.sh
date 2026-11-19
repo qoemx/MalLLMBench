@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-# Recompute paper tables from shipped per-sample records (no LLM calls, no training). v3
+# Recompute paper tables from shipped per-sample records (no LLM calls, no training). v4
 set -e
 cd "$(dirname "$0")/.."
+
+echo "== STEP 0: hard data-integrity assertions (abort on any failure) =="
+python code/evaluation/assert_integrity.py
 
 echo "== Full-Wild detection table =="
 python code/evaluation/classification/compute_metrics.py \
